@@ -1,15 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void printString(char *str)
-{
-    while(*str != '\0')
-    {
-        putchar(*str);
-        str++;
-    }
-    putchar('\0');
-}
+void printString(char *str);
 
 int main()
 {
@@ -24,4 +16,14 @@ int main()
     }
 	
 	return 0;
+}
+
+void printString(char *str)
+{
+    while(*str != '\0')
+    {
+        putchar(*str);
+        str++;
+    }
+    putchar('\0');
 }
